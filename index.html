@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Fed-DSATUR Decompositions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Decompositions of queries obtained using Fed-DSATUR algorithm">
+    <meta name="author" content="Simón Castillo, Guilermo Palma, Maria-Esther Vidal, Maribel Acosta and Gabriela Montoya">
+
+    <!-- CSS -->
+    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+        <script src="../assets/js/html5shiv.js"></script>
+        <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+
+    <!-- Part 1: Wrap all page content here -->
+    <div id="wrap">
+
+      <!-- Begin page content -->
+      <div class="container">
+        <div class="page-header">
+          <h1>Fed-DSATUR Decompositions</h1>
+        </div>
+        <div class="row">
+          <div class="span3" id="navbar">
+            <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="0">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#fedbench">FedBench</a></li>
+              <li><a href="#additional-queries">Additional Queries</a></li>
+            </ul>
+          </div>
+          <div class="span9">
+            <section id="home">
+              <h3>Home</h3>
+              <p>Choose a dataset from the sidebar.</p>
+            </section>
+            <section id="fedbench">
+              <h3>FedBench</h3>
+              <div class="decompositions">
+                <ul id="fedBench" class="nav nav-tabs">
+                  <li class="active"><a href="#tab-fedBench-fed1" data-toggle="tab">Federation 1</a></li>
+                  <li><a href="#tab-fedBench-fed2" data-toggle="tab">Federation 2</a></li>
+                </ul>
+                <div id="fedBenchContent" class="tab-content">
+                  <div class="tab-pane active fade in" id="tab-fedBench-fed1">
+
+                    <div class="fedBenchQueries">
+                      <div class="accordion" id="fedBench-fed1">
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed1" href="#fed1CD1">
+                              CD1
+                            </a>
+                          </div>
+                          <div id="fed1CD1" class="accordion-body collapse in">
+                            <div class="accordion-inner">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed1" href="#fed1CD2">
+                              CD2
+                            </a>
+                          </div>
+                          <div id="fed1CD2" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed1" href="#fed1CD3">
+                              CD3
+                            </a>
+                          </div>
+                          <div id="fed1CD3" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed1" href="#fed1CD4">
+                              CD4
+                            </a>
+                          </div>
+                          <div id="fed1CD4" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed1" href="#fed1CD5">
+                              CD5
+                            </a>
+                          </div>
+                          <div id="fed1CD5" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed1" href="#fed1CD6">
+                              CD6
+                            </a>
+                          </div>
+                          <div id="fed1CD6" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed1" href="#fed1CD7">
+                              CD7
+                            </a>
+                          </div>
+                          <div id="fed1CD7" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed1" href="#fed1LD1">
+                              LD1
+                            </a>
+                          </div>
+                          <div id="fed1LD1" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed1" href="#fed1LD2">
+                              LD2
+                            </a>
+                          </div>
+                          <div id="fed1LD2" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed1" href="#fed1LD3">
+                              LD3
+                            </a>
+                          </div>
+                          <div id="fed1LD3" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed1" href="#fed1LD4">
+                              LD4
+                            </a>
+                          </div>
+                          <div id="fed1LD4" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed1" href="#fed1LD5">
+                              LD5
+                            </a>
+                          </div>
+                          <div id="fed1LD5" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed1" href="#fed1LD6">
+                              LD6
+                            </a>
+                          </div>
+                          <div id="fed1LD6" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed1" href="#fed1LD7">
+                              LD7
+                            </a>
+                          </div>
+                          <div id="fed1LD7" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed1" href="#fed1LD8">
+                              LD8
+                            </a>
+                          </div>
+                          <div id="fed1LD8" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed1" href="#fed1LD9">
+                              LD9
+                            </a>
+                          </div>
+                          <div id="fed1LD9" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed1" href="#fed1LD10">
+                              LD10
+                            </a>
+                          </div>
+                          <div id="fed1LD10" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed1" href="#fed1LD11">
+                              LD11
+                            </a>
+                          </div>
+                          <div id="fed1LD11" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed1" href="#fed1LSD1">
+                              LSD1
+                            </a>
+                          </div>
+                          <div id="fed1LSD1" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed1" href="#fed1LSD2">
+                              LSD2
+                            </a>
+                          </div>
+                          <div id="fed1LSD2" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed1" href="#fed1LSD3">
+                              LSD3
+                            </a>
+                          </div>
+                          <div id="fed1LSD3" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed1" href="#fed1LSD4">
+                              LSD4
+                            </a>
+                          </div>
+                          <div id="fed1LSD4" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed1" href="#fed1LSD5">
+                              LSD5
+                            </a>
+                          </div>
+                          <div id="fed1LSD5" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed1" href="#fed1LSD6">
+                              LSD6
+                            </a>
+                          </div>
+                          <div id="fed1LSD6" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed1" href="#fed1LSD6">
+                              LSD6
+                            </a>
+                          </div>
+                          <div id="fed1LSD6" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed1" href="#fed1LSD7">
+                              LSD7
+                            </a>
+                          </div>
+                          <div id="fed1LSD7" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tab-fedBench-fed2">
+                    <div class="fedBenchQueries">
+                      <div class="accordion" id="fedBench-fed2">
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed2" href="#fed2CD1">
+                              CD1
+                            </a>
+                          </div>
+                          <div id="fed2CD1" class="accordion-body collapse in">
+                            <div class="accordion-inner">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed2" href="#fed2CD2">
+                              CD2
+                            </a>
+                          </div>
+                          <div id="fed2CD2" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed2" href="#fed2CD3">
+                              CD3
+                            </a>
+                          </div>
+                          <div id="fed2CD3" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed2" href="#fed2CD4">
+                              CD4
+                            </a>
+                          </div>
+                          <div id="fed2CD4" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed2" href="#fed2CD5">
+                              CD5
+                            </a>
+                          </div>
+                          <div id="fed2CD5" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed2" href="#fed2CD6">
+                              CD6
+                            </a>
+                          </div>
+                          <div id="fed2CD6" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed2" href="#fed2CD7">
+                              CD7
+                            </a>
+                          </div>
+                          <div id="fed2CD7" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed2" href="#fed2LD1">
+                              LD1
+                            </a>
+                          </div>
+                          <div id="fed2LD1" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed2" href="#fed2LD2">
+                              LD2
+                            </a>
+                          </div>
+                          <div id="fed2LD2" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed2" href="#fed2LD3">
+                              LD3
+                            </a>
+                          </div>
+                          <div id="fed2LD3" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed2" href="#fed2LD4">
+                              LD4
+                            </a>
+                          </div>
+                          <div id="fed2LD4" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed2" href="#fed2LD5">
+                              LD5
+                            </a>
+                          </div>
+                          <div id="fed2LD5" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed2" href="#fed2LD6">
+                              LD6
+                            </a>
+                          </div>
+                          <div id="fed2LD6" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed2" href="#fed2LD7">
+                              LD7
+                            </a>
+                          </div>
+                          <div id="fed2LD7" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed2" href="#fed2LD8">
+                              LD8
+                            </a>
+                          </div>
+                          <div id="fed2LD8" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed2" href="#fed2LD9">
+                              LD9
+                            </a>
+                          </div>
+                          <div id="fed2LD9" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed2" href="#fed2LD10">
+                              LD10
+                            </a>
+                          </div>
+                          <div id="fed2LD10" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed2" href="#fed2LD11">
+                              LD11
+                            </a>
+                          </div>
+                          <div id="fed2LD11" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed2" href="#fed2LSD1">
+                              LSD1
+                            </a>
+                          </div>
+                          <div id="fed2LSD1" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed2" href="#fed2LSD2">
+                              LSD2
+                            </a>
+                          </div>
+                          <div id="fed2LSD2" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed2" href="#fed2LSD3">
+                              LSD3
+                            </a>
+                          </div>
+                          <div id="fed2LSD3" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed2" href="#fed2LSD4">
+                              LSD4
+                            </a>
+                          </div>
+                          <div id="fed2LSD4" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed2" href="#fed2LSD5">
+                              LSD5
+                            </a>
+                          </div>
+                          <div id="fed2LSD5" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed2" href="#fed2LSD6">
+                              LSD6
+                            </a>
+                          </div>
+                          <div id="fed2LSD6" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed2" href="#fed2LSD6">
+                              LSD6
+                            </a>
+                          </div>
+                          <div id="fed2LSD6" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#fedBench-fed2" href="#fed2LSD7">
+                              LSD7
+                            </a>
+                          </div>
+                          <div id="fed2LSD7" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="additional-queries">
+              <h3>Additional Queries</h3>
+              <div class="decompositions">
+                <ul id="additionalQueries" class="nav nav-tabs">
+                  <li class="active"><a href="#fed1" data-toggle="tab">Federation 1</a></li>
+                  <li><a href="#fed2" data-toggle="tab">Federation 2</a></li>
+                </ul>
+                <div id="additionalQueriesContent" class="tab-content">
+                  <div class="tab-pane active fade in" id="fed1">
+
+                    <div class="additionalQueriesQueries">
+                      <div class="accordion" id="additionalQueries-fed1">
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#additionalQueries-fed1" href="#fed1C1">
+                              C1
+                            </a>
+                          </div>
+                          <div id="fed1C1" class="accordion-body collapse in">
+                            <div class="accordion-inner">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#additionalQueries-fed1" href="#fed1C2">
+                              C2
+                            </a>
+                          </div>
+                          <div id="fed1C2" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#additionalQueries-fed1" href="#fed1C3">
+                              C3
+                            </a>
+                          </div>
+                          <div id="fed1C3" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#additionalQueries-fed1" href="#fed1C4">
+                              C4
+                            </a>
+                          </div>
+                          <div id="fed1C4" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#additionalQueries-fed1" href="#fed1C5">
+                              C5
+                            </a>
+                          </div>
+                          <div id="fed1C5" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#additionalQueries-fed1" href="#fed1C6">
+                              C6
+                            </a>
+                          </div>
+                          <div id="fed1C6" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#additionalQueries-fed1" href="#fed1C7">
+                              C7
+                            </a>
+                          </div>
+                          <div id="fed1C7" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#additionalQueries-fed1" href="#fed1C8">
+                              C8
+                            </a>
+                          </div>
+                          <div id="fed1C8" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#additionalQueries-fed1" href="#fed1C9">
+                              C9
+                            </a>
+                          </div>
+                          <div id="fed1C9" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#additionalQueries-fed1" href="#fed1C10">
+                              C10
+                            </a>
+                          </div>
+                          <div id="fed1C10" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="fed2">
+                    <div class="additionalQueriesQueries">
+                      <div class="accordion" id="additionalQueries-fed2">
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#additionalQueries-fed2" href="#fed2C1">
+                              C1
+                            </a>
+                          </div>
+                          <div id="fed2C1" class="accordion-body collapse in">
+                            <div class="accordion-inner">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#additionalQueries-fed2" href="#fed2C2">
+                              C2
+                            </a>
+                          </div>
+                          <div id="fed2C2" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#additionalQueries-fed2" href="#fed2C3">
+                              C3
+                            </a>
+                          </div>
+                          <div id="fed2C3" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#additionalQueries-fed2" href="#fed2C4">
+                              C4
+                            </a>
+                          </div>
+                          <div id="fed2C4" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#additionalQueries-fed2" href="#fed2C5">
+                              C5
+                            </a>
+                          </div>
+                          <div id="fed2C5" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#additionalQueries-fed2" href="#fed2C6">
+                              C6
+                            </a>
+                          </div>
+                          <div id="fed2C6" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#additionalQueries-fed2" href="#fed2C7">
+                              C7
+                            </a>
+                          </div>
+                          <div id="fed2C7" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#additionalQueries-fed2" href="#fed2C8">
+                              C8
+                            </a>
+                          </div>
+                          <div id="fed2C8" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#additionalQueries-fed2" href="#fed2C9">
+                              C9
+                            </a>
+                          </div>
+                          <div id="fed2C9" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#additionalQueries-fed2" href="#fed2C10">
+                              C10
+                            </a>
+                          </div>
+                          <div id="fed2C10" class="accordion-body collapse">
+                            <div class="accordion-inner">
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div id="push"></div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+        <p class="muted credit">
+          <img src="assets/img/usb.png" alt="Universidad Simón Bolívar">
+          <a href="#" class="contact">Contact us.</a>
+        </p>
+      </div>
+    </div>
+
+
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
